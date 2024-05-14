@@ -1,6 +1,7 @@
 import pygame
 from setting import *
 from levels import Level
+from game_data import level_0
 # imports file
 
 
@@ -12,7 +13,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()
 
 # instance of class
-Level = Level(LEVEL_MAP, screen)
+Level = Level(level_0, screen)
 
 # game running variables
 game_on = True
